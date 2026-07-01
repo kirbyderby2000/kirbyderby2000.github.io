@@ -21,7 +21,7 @@ body {
 }
 
 .contact-section {
-    min-height: 60vh;
+    min-height: 100vh;
 }
 
 .about-section img {
@@ -58,6 +58,29 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+/* The initial, hidden state */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    /* Shifts the element down 30px */
+    transition: opacity 2s cubic-bezier(0.25, 1, 0.5, 1),
+        transform 2s cubic-bezier(0.25, 1, 0.5, 1);
+    will-change: opacity, transform;
+}
+
+/* The visible, active state triggered by JS */
+.scroll-reveal.reveal-active {
+    opacity: 1;
+    /* Moves smoothly back to its default layout position */
+    transform: translateY(0);
+}
+
+#main-navbar .active span {
+    border-bottom: 2px black solid;
+    height: 2em;
 }
 
 

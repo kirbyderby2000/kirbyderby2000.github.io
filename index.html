@@ -13,10 +13,9 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 
-<body>
-    <div id="about"></div>
+<body data-bs-smooth-scroll="false">
     <!-- NAVIGATION BAR -->
-    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+    <nav id="main-navbar" class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#about">
                 <span class="fw-bold nav-title">Bryan Ayala <span class="d-inlineblock mx-1">|</span> Software
@@ -30,16 +29,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bold">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#about">About</a>
+                        <a class="nav-link" aria-current="page" href="#about"><span>About</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
+                        <a class="nav-link" href="#skills"><span>Skills</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
+                        <a class="nav-link" href="#projects"><span>Projects</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="#contact"><span>Contact</span></a>
                     </li>
                 </ul>
             </div>
@@ -47,9 +46,9 @@
     </nav>
 
     <!-- CONTENT CONTAINER -->
-    <div class="container main mt-5">
+    <div class="container main">
         <!-- About Section -->
-        <div class="row about-section text-center align-content-center gy-5">
+        <div class="row about-section text-center align-content-center pt-5 gy-5  scroll-reveal" id="about">
             <div class="col-12 col-lg-6 order-2 order-lg-1 align-content-center flex-grow-2">
                 <h1 class="display-5 fw-bold">About Me</h1>
                 <p class="lead">
@@ -70,9 +69,8 @@
                 <img src="/img/headshot1x1.jpg" alt="Image of Bryan" srcset="">
             </div>
         </div>
-        <div id="skills"></div>
         <!-- Skills Section -->
-        <div class="row skills-section text-center gy-5 mt-5">
+        <div class="row skills-section text-center gy-5 mt-5 scroll-reveal" id="skills">
             <div class="col align-content-center">
                 <h2 class="display-5 fw-bold mb-4">Development Skills</h2>
                 <div class="row justify-content-center align-content-center gy-4">
@@ -227,9 +225,8 @@
                 </div>
             </div>
         </div>
-        <div id="projects"></div>
         <!-- Projects Section -->
-        <div class="row projects-section text-center gy-5 my-5">
+        <div class="row projects-section text-center gy-5 my-5 pt-5 scroll-reveal" id="projects">
             <div class="col align-content-center">
                 <h2 class="display-5 fw-bold">Personal Projects and Demos</h2>
                 <div class="row justify-content-center align-content-center">
@@ -291,10 +288,8 @@
                 </div>
             </div>
         </div>
-
-        <div id="contact"></div>
         <!-- Contact Section -->
-        <div class="row contact-section text-center gy-5 my-5">
+        <div class="row contact-section text-center gy-5 my-5  scroll-reveal" id="contact">
             <div class="col align-content-center">
                 <h2 class="display-5 fw-bold">Contact</h2>
                 <div class="row justify-content-center align-content-center">
