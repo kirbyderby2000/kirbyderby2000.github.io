@@ -1,3 +1,112 @@
-.style-test {
-    color: pink;
+body {
+    background: linear-gradient(135deg, rgba(25, 43, 55, 0.98), rgba(17, 24, 39, 0.98));
+    min-height: 100vh;
+    color: white;
+}
+
+.main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-section {
+    min-height: 85vh;
+}
+
+
+.skills-section,
+.projects-section {
+    min-height: 100vh;
+}
+
+.contact-section {
+    min-height: 60vh;
+}
+
+.about-section img {
+    border-radius: 50%;
+    width: auto;
+    height: auto;
+    max-width: 80%;
+}
+
+.skill-icons-container div {
+    width: 50px;
+    height: 50px;
+    margin: 0.5em 0.5em;
+}
+
+.skill-icons-container img {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+/* Update your general embedded-frame rule */
+.embedded-frame {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    /* Allows it to scale naturally by default */
+    aspect-ratio: 16 / 9;
+    /* Simplified from calc(560/315) */
+}
+
+/* Ensure the preview wrapper doesn't lock a rigid min-height that forces distortion */
+.project-demo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Fixes the navbar in smaller screen sizes */
+@media (max-width:451px) {
+    .nav-title {
+        font-size: 0.75em;
+    }
+
+    .nav-svg {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+/* Fixes the navbar in extra small screen sizes */
+@media (max-width:362px) {
+    .nav-title {
+        font-size: 0.70em;
+    }
+
+    .nav-svg {
+        width: 25px;
+        height: 25px;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .about-section img {
+        width: 45%;
+    }
+
+    .about-section {
+        /* align-content: center; */
+    }
+
+}
+
+/* Target the mobile breakpoint where the layout shifts */
+@media (max-width: 767px) {
+    .project-preview-img {
+        height: 250px;
+        /* Force a fixed height boundary for mobile */
+        width: 100%;
+        /* Fill the card width */
+        object-fit: cover;
+        /* Crop edges instead of skewing */
+        object-position: center;
+    }
 }
