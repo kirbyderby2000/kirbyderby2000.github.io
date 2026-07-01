@@ -4,15 +4,335 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Bryan Ayala - Software Engineer Portfolio</title>
+    <!-- Bootstrap and Prism CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="/prism/prism.css">
+    <!-- My CSS -->
     <link rel="stylesheet" href="/style.css">
 </head>
 
-<body>
-    <h1>Hello World</h1>
-    <div class="style-test">style test</div>
+<body data-bs-smooth-scroll="false">
+    <!-- NAVIGATION BAR -->
+    <nav id="main-navbar" class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#about">
+                <span class="fw-bold nav-title">Bryan Ayala <span class="d-inlineblock mx-1">|</span> Software
+                    Engineer</span>
+                <img src="/svg/code-svgrepo-com.svg" class="nav-svg" alt="Code Icon" srcset=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bold">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#about"><span>About</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills"><span>Skills</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects"><span>Projects</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact"><span>Contact</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
+    <!-- CONTENT CONTAINER -->
+    <div class="container main">
+        <!-- About Section -->
+        <div class="row about-section text-center align-content-center scroll-reveal pt-5 gy-5 " id="about">
+            <div class="col-12 col-lg-6 order-2 order-lg-1 align-content-center flex-grow-2">
+                <h1 class="display-5 fw-bold">About Me</h1>
+                <p class="lead">
+                    Greetings! My name is Bryan Ayala.
+                    <br>
+                    I'm a software engineer serving the Greater Los Angeles area with 11 years of experience across
+                    different industries in tech: from
+                    enterprise desktop application development, to videogames, and fullstack web development.
+                    <br>
+                    I've worked on a lot of exciting projects for some of the biggest companies in the world such as
+                    Amazon and Disney, with some projects exceeding over <strong>100 million </strong>active users.<br>
+                    I take a lot of pride in my work for going above and beyond to ensure the projects I work on
+                    are stable, optimized, exceed their expectations, and that they reach their full potential. At the
+                    end of the day, I use my skills to build solutions for complex and technical challenges.
+                </p>
+            </div>
+            <div class="col-12 col-lg-6 align-content-center about-headshot-col">
+                <img src="/img/headshot1x1.jpg" alt="Image of Bryan" srcset="">
+            </div>
+        </div>
+        <!-- Skills Section -->
+        <div class="row skills-section text-center scroll-reveal mt-5 my-5 pt-5" id="skills">
+            <div class="col align-content-center">
+                <h2 class="display-5 fw-bold mb-4">Development Skills</h2>
+                <div class="row justify-content-center align-content-center gy-4">
+                    <!-- Skill 1: Languages -->
+                    <div class="col-12 col-lg-6">
+                        <div class="card h-100 skill-card shadow-sm bg-dark text-bg-dark">
+                            <div class="card-body text-center p-4">
+                                <!-- Skills Icons Container -->
+                                <div
+                                    class="d-flex flex-wrap justify-content-center align-content-center skill-icons-container">
+                                    <div title="Javascript">
+                                        <img src="/svg/javascript-svgrepo-com.svg" alt="Javascript Logo" srcset="">
+                                    </div>
+                                    <div title="Typescript">
+                                        <img src="/svg/typescript-icon.svg" alt="Typescript Logo" srcset="">
+
+                                    </div>
+                                    <div title="C#">
+                                        <img src="/svg/c-sharp.svg" alt="C# Logo" srcset="">
+
+                                    </div>
+
+                                    <div title="LUA">
+                                        <img src="/svg/lua.svg" alt="LUA Logo" srcset="">
+
+
+                                    </div>
+                                    <div title="VBA">
+                                        <img src="/svg/vb-svgrepo-com.svg" alt="VBA Logo" srcset="">
+
+
+                                    </div>
+                                </div>
+                                <!-- Skills Info -->
+                                <h5 class="card-title fw-bold my-3"> <span>
+                                        <img src="/svg/braces-asterisk.svg" alt="Coding Languages Icon" srcset="">
+                                    </span> Languages</h5>
+                                <p class="card-text">
+                                    Proficient in multiple languages from full-featured object-oriented languages such
+                                    as C#,
+                                    Typescript, Javascript, and languages in specialized scripting use-case enviornments
+                                    such as LUA
+                                    and VBA.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Skill 2: Frontend -->
+                    <div class="col-12 col-lg-6">
+                        <div class="card h-100 skill-card shadow-sm bg-dark text-bg-dark">
+                            <div class="card-body text-center p-4">
+                                <!-- Skills Icons Container -->
+                                <div
+                                    class="d-flex flex-wrap justify-content-center align-content-center skill-icons-container">
+                                    <div title="React">
+                                        <img src="/svg/react.svg" alt="React Logo" srcset="">
+                                    </div>
+                                    <div title="Javascript">
+                                        <img src="/svg/javascript-svgrepo-com.svg" alt="Javascript Logo" srcset="">
+                                    </div>
+                                    <div title="HTML5">
+                                        <img src="/svg/html-5.svg" alt="HTML5 Logo" srcset="">
+                                    </div>
+                                    <div title="CSS">
+                                        <img src="/svg/css.svg" alt="CSS Logo" srcset="">
+                                    </div>
+                                    <div title="Bootstrap">
+                                        <img src="/svg/bootstrap.svg" alt="Bootstrap Logo" srcset="">
+
+                                    </div>
+                                </div>
+                                <!-- Skills Info -->
+                                <h5 class="card-title fw-bold my-3"> <span>
+                                        <img src="/svg/front-end-icon.svg" alt="Front-End Icon" srcset="">
+                                    </span> Frontend</h5>
+                                <p class="card-text">
+                                    Capable of building modern, responsive, and mobile-first web pages using
+                                    technologies such as
+                                    React, Bootstrap, and Javascript.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Skill 3: Backend -->
+                    <div class="col-12 col-lg-6">
+                        <div class="card h-100 skill-card shadow-sm bg-dark text-bg-dark">
+                            <div class="card-body text-center p-4">
+                                <!-- Skills Icons Container -->
+                                <div
+                                    class="d-flex flex-wrap justify-content-center align-content-center skill-icons-container">
+                                    <div title="NodeJS">
+                                        <img src="/svg/nodejs.svg" alt="NodeJS Logo" srcset="">
+                                    </div>
+                                    <div title="Express">
+                                        <img src="/svg/express.svg" alt="Express Logo" srcset="">
+                                    </div>
+                                    <div title="MongoDB">
+                                        <img src="/svg/mongodb-icon.svg" alt="MongoDB Logo" srcset="">
+                                    </div>
+                                    <div title="EJS">
+                                        <img src="/svg/ejs-svgrepo-com.svg" alt="EJS Logo" srcset="">
+                                    </div>
+                                    <div title="PassportJS">
+                                        <img src="/svg/passport.svg" alt="Passport JS Logo" srcset="">
+                                    </div>
+
+                                </div>
+                                <!-- Skills Info -->
+                                <h5 class="card-title fw-bold my-3"> <span>
+                                        <img src="/svg/back-end-icon.svg" alt="Back-End Tech Icon" srcset="">
+                                    </span> Backend</h5>
+                                <p class="card-text">
+                                    Able to build and deploy reliable and secure servers that provide RESTful APIs, CRUD
+                                    resource management, authentication and authorization checks, and dynamic page
+                                    rendering.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Skill 4: Tools and Game Engines -->
+                    <div class="col-12 col-lg-6">
+                        <div class="card h-100 skill-card shadow-sm bg-dark text-bg-dark">
+                            <div class="card-body text-center p-4">
+                                <!-- Skills Icons Container -->
+                                <div
+                                    class="d-flex flex-wrap justify-content-center align-content-center skill-icons-container">
+                                    <div title="Git / GitHub">
+                                        <img src="/svg/git-icon.svg" alt="Git Logo" srcset="">
+                                    </div>
+                                    <div title="VS Code">
+                                        <img src="/svg/visual-studio-code.svg" alt="VS Code Logo" srcset="">
+                                    </div>
+                                    <div title="Claude">
+                                        <img src="/svg/claude-icon.svg" alt="Claude Logo" srcset="">
+                                    </div>
+                                    <div title="Unity">
+                                        <img src="/svg/unity.svg" alt="Unity Logo" srcset="">
+                                    </div>
+                                    <div title="ThreeJS">
+                                        <img src="/svg/threejs.svg" alt="ThreeJS Logo" srcset="">
+                                    </div>
+
+                                </div>
+                                <!-- Skills Info -->
+                                <h5 class="card-title fw-bold my-3"> <span>
+                                        <img src="/svg/tools-svgrepo-com.svg" alt="Tools Icon" srcset="">
+                                    </span> Tools and Game Engines</h5>
+                                <p class="card-text">
+                                    Proficient with using tools to manage projects such as Git, VS Code, and Claude.
+                                    Able to build unique interactive 3D and Augmented Reality experiences
+                                    using Unity, and ThreeJS.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Projects Section -->
+        <div class="row projects-section text-center scroll-reveal gy-5 my-5 pt-5" id="projects">
+            <div class="col align-content-center">
+                <h2 class="display-5 fw-bold">Personal Projects and Demos</h2>
+                <div class="row justify-content-center align-content-center">
+                    <!-- Videogame Demo -->
+                    <div class="row justify-content-center align-content-center gy-2">
+                        <div class="col-12 col-lg-10">
+                            <div class="card h-100 project-card shadow-sm bg-dark text-bg-dark">
+                                <div class="card-body text-center p-4">
+                                    <div class="project-demo">
+                                        <iframe class="embedded-frame"
+                                            src="https://www.youtube.com/embed/GzicQTjgVq4?si=-qlstaI7xXdgV_eR"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                    <!-- Project Info -->
+                                    <h5 class="card-title fw-bold my-3"> <span>
+                                            <img src="/svg/videogame-controller-svgrepo-com.svg"
+                                                alt="Videogame Controller Icon" srcset="">
+                                        </span> Videogame Projects</h5>
+                                    <p class="card-text">
+                                        A demo of some of my favorite interactive videogame projects I worked on while I
+                                        was
+                                        freelancing clientelle projects and building personal projects.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- YelpCamp Demo -->
+                    <div class="row justify-content-center align-content-center gy-4">
+                        <div class="col-12 col-lg-10">
+                            <div class="card h-100 project-card shadow-sm bg-dark text-bg-dark">
+                                <div class="card-body text-center p-4">
+                                    <div class="project-demo">
+                                        <img class="embedded-frame project-preview-img" src="/img/yelpcampproject.jpg"
+                                            alt="YelpCamp Demo Image" srcset="" id="yelp-camp">
+                                    </div>
+                                    <!-- Project Info -->
+                                    <h5 class="card-title fw-bold my-3"> <span>
+                                            <img src="/svg/tent-icon.svg" alt="Tent Icon" srcset="">
+                                        </span> YelpCamp</h5>
+                                    <p class="card-text">
+                                        A fullstack web application I built following a web development course to
+                                        improve my fullstack development skills. I fully customized it for
+                                        production-ready deployment by implmenting Google
+                                        OAuth, secure account email verifications, secure account password resets, an
+                                        administrative dashboard, design improvements, and quality of life features such
+                                        as asynchronous
+                                        paginated content loading.
+                                        <br>
+                                        You can visit the live project link at <a class="text-info text-decoration-none"
+                                            href="https://yelpcampproject.com/">https://yelpcampproject.com/</a>
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact Section -->
+        <div class="row contact-section text-center scroll-reveal gy-5 my-5 pt-5" id="contact">
+            <div class="col align-content-center">
+                <h2 class="display-5 fw-bold">Contact</h2>
+                <div class="row justify-content-center align-content-center">
+
+                    <div class="row justify-content-center align-content-center gy-2">
+                        <div class="col-12 col-lg-6">
+                            <div class="card h-100 project-card shadow-sm bg-dark text-bg-dark p-0">
+                                <div class="card-body text-center p-3">
+                                    <h5 class="card-title fw-bold"> <span>
+                                            <img src="/svg/contact-new-svgrepo-com.svg" alt="Contact Icon" srcset="">
+                                        </span> Let's Get in Touch!</h5>
+                                    <div
+                                        class="d-flex justify-content-center align-content-center flex-wrap contact-icons">
+                                        <a href="mailto:bryan.ayala.dev@gmail.com" class="mx-3 my-3">
+                                            <img src="/svg/email-icon.svg" alt="Email Icon" srcset="">
+                                        </a>
+                                        <a href="https://www.linkedin.com/in/bryan-ayala-5b1978a4/" class="mx-3 my-3">
+                                            <img src="/svg/linkedin-svgrepo-com.svg" alt="LinkedIn Logo" srcset="">
+                                        </a>
+                                        <a href="https://github.com/kirbyderby2000" class="mx-3 my-3">
+                                            <img src="/svg/github-icon.svg" alt="GitHub Logo" srcset="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- Bootstrap & Prism JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="/prism//prism.js"></script>
+    <!-- My JS -->
     <script src="/app.js"></script>
+
 </body>
 
 </html>

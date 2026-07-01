@@ -1,3 +1,144 @@
-.style-test {
-    color: pink;
+body {
+    background: linear-gradient(135deg, rgba(25, 43, 55, 0.98), rgba(17, 24, 39, 0.98));
+    min-height: 100vh;
+    color: white;
+}
+
+.main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-section {
+    min-height: 85vh;
+}
+
+
+.skills-section,
+.projects-section,
+.contact-section {
+    min-height: 100vh;
+}
+
+.about-section img {
+    border-radius: 50%;
+    width: auto;
+    height: auto;
+    max-width: 80%;
+}
+
+.skill-icons-container div {
+    width: 50px;
+    height: 50px;
+    margin: 0.5em 0.5em;
+}
+
+.skill-icons-container img {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+/* Update your general embedded-frame rule */
+.embedded-frame {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    /* Allows it to scale naturally by default */
+    aspect-ratio: 16 / 9;
+    /* Simplified from calc(560/315) */
+}
+
+/* Ensure the preview wrapper doesn't lock a rigid min-height that forces distortion */
+.project-demo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* The initial, hidden state */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    /* Shifts the element down 30px */
+    transition: opacity 1s cubic-bezier(0.25, 1, 0.5, 1),
+        transform 1s cubic-bezier(0.25, 1, 0.5, 1);
+    will-change: opacity, transform;
+}
+
+/* The visible, active state triggered by JS */
+.scroll-reveal.reveal-active {
+    opacity: 1;
+    /* Moves smoothly back to its default layout position */
+    transform: translateY(0);
+}
+
+#main-navbar .active span {
+    border-bottom: 2px black solid;
+    height: 2em;
+}
+
+
+
+/* Fixes the navbar in smaller screen sizes */
+@media (max-width:451px) {
+    .nav-title {
+        font-size: 0.75em;
+    }
+
+    .nav-svg {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+/* Fixes the navbar in extra small screen sizes */
+@media (max-width:362px) {
+    .nav-title {
+        font-size: 0.70em;
+    }
+
+    .nav-svg {
+        width: 25px;
+        height: 25px;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .about-section img {
+        width: 45%;
+    }
+
+    .about-section {
+        /* align-content: center; */
+    }
+
+}
+
+/* Target the mobile breakpoint where the layout shifts */
+@media (max-width: 767px) {
+    .project-preview-img {
+        height: 250px;
+        /* Force a fixed height boundary for mobile */
+        width: 100%;
+        /* Fill the card width */
+        object-fit: cover;
+        /* Crop edges instead of skewing */
+        object-position: center;
+    }
+}
+
+
+@media (max-width: 992px) {
+
+    #about,
+    #skills,
+    #projects,
+    #content {
+        scroll-margin-top: 80px;
+    }
 }
