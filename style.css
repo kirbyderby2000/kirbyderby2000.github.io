@@ -1,24 +1,13 @@
 body {
     background: linear-gradient(135deg, rgba(25, 43, 55, 0.98), rgba(17, 24, 39, 0.98));
-    min-height: 100vh;
     color: white;
 }
 
-.main {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-.about-section {
-    min-height: 85vh;
-}
-
-
+.about-section,
 .skills-section,
 .projects-section,
 .contact-section {
-    min-height: 100vh;
+    min-height: 100dvh;
 }
 
 .about-section img {
@@ -84,6 +73,11 @@ body {
 
 /* Fixes the navbar in smaller screen sizes */
 @media (max-width:451px) {
+
+    #about {
+        padding-top: 5em !important;
+    }
+
     .nav-title {
         font-size: 0.75em;
     }
@@ -132,13 +126,9 @@ body {
     }
 }
 
-
-@media (max-width: 992px) {
-
-    #about,
-    #skills,
-    #projects,
-    #content {
-        scroll-margin-top: 80px;
-    }
+#about,
+#skills,
+#projects,
+#contact {
+    scroll-margin-top: 50px;
 }

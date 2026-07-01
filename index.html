@@ -15,7 +15,7 @@
 
 <body data-bs-smooth-scroll="false">
     <!-- NAVIGATION BAR -->
-    <nav id="main-navbar" class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+    <nav id="main-navbar" class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#about">
                 <span class="fw-bold nav-title">Bryan Ayala <span class="d-inlineblock mx-1">|</span> Software
@@ -46,9 +46,9 @@
     </nav>
 
     <!-- CONTENT CONTAINER -->
-    <div class="container main">
+    <div class="container main d-flex flex-column ">
         <!-- About Section -->
-        <div class="row about-section text-center align-content-center scroll-reveal pt-5 gy-5 " id="about">
+        <div class="row about-section text-center align-content-center scroll-reveal pt-5 pt-lg-3" id="about">
             <div class="col-12 col-lg-6 order-2 order-lg-1 align-content-center flex-grow-2">
                 <h1 class="display-5 fw-bold">About Me</h1>
                 <p class="lead">
@@ -70,7 +70,7 @@
             </div>
         </div>
         <!-- Skills Section -->
-        <div class="row skills-section text-center scroll-reveal mt-5 my-5 pt-5" id="skills">
+        <div class="row skills-section text-center scroll-reveal pt-5 pt-lg-3" id="skills">
             <div class="col align-content-center">
                 <h2 class="display-5 fw-bold mb-4">Development Skills</h2>
                 <div class="row justify-content-center align-content-center gy-4">
@@ -226,37 +226,12 @@
             </div>
         </div>
         <!-- Projects Section -->
-        <div class="row projects-section text-center scroll-reveal gy-5 my-5 pt-5" id="projects">
+        <div class="row projects-section text-center scroll-reveal pt-5 pt-lg-5" id="projects">
             <div class="col align-content-center">
                 <h2 class="display-5 fw-bold">Personal Projects and Demos</h2>
                 <div class="row justify-content-center align-content-center">
-                    <!-- Videogame Demo -->
-                    <div class="row justify-content-center align-content-center gy-2">
-                        <div class="col-12 col-lg-10">
-                            <div class="card h-100 project-card shadow-sm bg-dark text-bg-dark">
-                                <div class="card-body text-center p-4">
-                                    <div class="project-demo">
-                                        <iframe class="embedded-frame"
-                                            src="https://www.youtube.com/embed/GzicQTjgVq4?si=-qlstaI7xXdgV_eR"
-                                            title="YouTube video player" frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                    </div>
-                                    <!-- Project Info -->
-                                    <h5 class="card-title fw-bold my-3"> <span>
-                                            <img src="/svg/videogame-controller-svgrepo-com.svg"
-                                                alt="Videogame Controller Icon" srcset="">
-                                        </span> Videogame Projects</h5>
-                                    <p class="card-text">
-                                        A demo of some of my favorite interactive videogame projects I worked on while I
-                                        was
-                                        freelancing clientelle projects and building personal projects.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <!-- YelpCamp Demo -->
-                    <div class="row justify-content-center align-content-center gy-4">
+                    <div class="row justify-content-center align-content-center gy-2 mb-3">
                         <div class="col-12 col-lg-10">
                             <div class="card h-100 project-card shadow-sm bg-dark text-bg-dark">
                                 <div class="card-body text-center p-4">
@@ -285,11 +260,37 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Videogame Demo -->
+                    <div class="row justify-content-center align-content-center gy-2 mb-3">
+                        <div class="col-12 col-lg-10">
+                            <div class="card h-100 project-card shadow-sm bg-dark text-bg-dark">
+                                <div class="card-body text-center p-4">
+                                    <div class="project-demo">
+                                        <iframe class="embedded-frame"
+                                            src="https://www.youtube.com/embed/GzicQTjgVq4?si=-qlstaI7xXdgV_eR"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                    <!-- Project Info -->
+                                    <h5 class="card-title fw-bold my-3"> <span>
+                                            <img src="/svg/videogame-controller-svgrepo-com.svg"
+                                                alt="Videogame Controller Icon" srcset="">
+                                        </span> Videogame Projects</h5>
+                                    <p class="card-text">
+                                        A demo of some of my favorite interactive videogame projects I worked on while I
+                                        was
+                                        freelancing clientelle projects and building personal projects.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
         <!-- Contact Section -->
-        <div class="row contact-section text-center scroll-reveal gy-5 my-5 pt-5" id="contact">
+        <div class="row contact-section text-center scroll-reveal  pt-5 pt-lg-3" id="contact">
             <div class="col align-content-center">
                 <h2 class="display-5 fw-bold">Contact</h2>
                 <div class="row justify-content-center align-content-center">
