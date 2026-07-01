@@ -16,10 +16,7 @@ body {
 
 
 .skills-section,
-.projects-section {
-    min-height: 100vh;
-}
-
+.projects-section,
 .contact-section {
     min-height: 100vh;
 }
@@ -66,8 +63,8 @@ body {
     opacity: 0;
     transform: translateY(30px);
     /* Shifts the element down 30px */
-    transition: opacity 2s cubic-bezier(0.25, 1, 0.5, 1),
-        transform 2s cubic-bezier(0.25, 1, 0.5, 1);
+    transition: opacity 1s cubic-bezier(0.25, 1, 0.5, 1),
+        transform 1s cubic-bezier(0.25, 1, 0.5, 1);
     will-change: opacity, transform;
 }
 
@@ -82,6 +79,7 @@ body {
     border-bottom: 2px black solid;
     height: 2em;
 }
+
 
 
 /* Fixes the navbar in smaller screen sizes */
@@ -131,5 +129,16 @@ body {
         object-fit: cover;
         /* Crop edges instead of skewing */
         object-position: center;
+    }
+}
+
+
+@media (max-width: 992px) {
+
+    #about,
+    #skills,
+    #projects,
+    #content {
+        scroll-margin-top: 80px;
     }
 }
